@@ -53,7 +53,7 @@ pipeline {
 		steps {
 			//"docker build -t olisamarvis/currency-exchange-devops:$env.BUILD_TAG"
 			script {
-				dockerImage = docker.build("docker build -t olisamarvis/currency-exchange-devops:${env.BUILD_TAG}")
+				dockerImage = docker.build("olisamarvis/currency-exchange-devops:${env.BUILD_TAG}")
 			}
 		}
 	}
